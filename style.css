@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+   --bordercolor: #ededed
+}
+.main{
+    border: 0.5px solid var(--bordercolor);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 100px 20px 100px;
+
+}
+.information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table,td,tr{
+    /*border: 1px solid black;*/
+    border-collapse: collapse;
+}
+th{
+    text-align: center;
+}
+
+td{
+    width: 200px;
+    text-align: end;
+    height: 25px;
+    padding: 5px;
+}
+input{
+    width: 100%;
+    height: 20px;
+}
+.textRed{
+    color: red;
+}
+.commodity{
+    border: 0,5px solid var(--bordercolor);
+    border-radius: 5px 5px 0px 0px;
+}
+.commodity_button{
+    color: #5595c2;
+    padding: 5px;
+}
+.nav > td{
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 0px 10px 0px;
+}
+select{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+.error{
+    border: 1px solid red;
+    border-radius: 3px;
+}
