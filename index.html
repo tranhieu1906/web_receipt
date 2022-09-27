@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <table class="information">
+        <tr>
+          <th colspan="4">Xuất Hóa Đơn</th>
+        </tr>
+        <tr>
+          <td>Họ và tên người khách hàng</td>
+          <td>
+            <input
+              type="text"
+              id="name"
+              onblur="checkName()"
+              oninput="removeError()"
+            />
+            <p id="msName" class="textRed"></p>
+          </td>
+          <td>Ngày hóa đơn</td>
+          <td>
+            <input
+              type="date"
+              id="date"
+              onblur="checkDate()"
+              oninput="removeErrorDate()"
+            />
+            <p id="msDate" class="textRed"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td>
+            <input
+              type="text"
+              id="address"
+              onblur="checkAddress()"
+              oninput="removeErrorAddress()"
+            />
+            <p id="msAddress" class="textRed"></p>
+          </td>
+          <td>Email</td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              onblur="checkEmail()"
+              oninput="removeErrorEmail()"
+            />
+            <p id="msEmail" class="textRed"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>Số điện thoại</td>
+          <td>
+            <input
+              type="tel"
+              name=""
+              id="phone"
+              onblur="checkPhone()"
+              oninput="removeErrorPhone()"
+            />
+            <p id="msPhone" class="textRed"></p>
+          </td>
+        </tr>
+      </table>
+      <div class="commodity" id="commodity">
+        <table id="table">
+          <tr>
+            <td>
+              <button
+                class="commodity_button"
+                id="commodity_button"
+                onclick="clickBtn()"
+              >
+                (F2)Thêm dòng trống
+              </button>
+            </td>
+          </tr>
+          <tr class="nav" style="background-color: #d0f1f8">
+            <td>STT</td>
+            <td>Mã hàng</td>
+            <td style="width: 400px">Tên hàng hóa & dịch vụ</td>
+            <td>Đơn vị tính</td>
+            <td>Số lượng</td>
+            <td>Đơn giá</td>
+            <td>Thành tiền</td>
+            <td>(%)VAT</td>
+            <td>Thuế VAT</td>
+            <td>Thao Tác</td>
+          </tr>
+<!--            <tr class="nav">-->
+<!--              <td class="index">0</td>-->
+<!--              <td>-->
+<!--                <input type="text" />-->
+<!--              </td>-->
+<!--              <td>-->
+<!--                <input type="text">-->
+<!--              </td>-->
+<!--              <td>-->
+<!--                <select>-->
+<!--                  <option value="chọn">&#45;&#45;chọn&#45;&#45;</option>-->
+<!--                  <option value="Chiếc">Chiếc</option>-->
+<!--                  <option value="Cái">Cái</option>-->
+<!--                  <option value="Chỉ">Chỉ</option>-->
+<!--                </select>-->
+<!--              </td>-->
+<!--              <td>-->
+<!--                <input type="number" id="amount" onblur="blurInput()" />-->
+<!--              </td>-->
+<!--              <td>-->
+<!--                <input type="text" id="price" onblur="blurInput()" />-->
+<!--              </td>-->
+<!--              <td id="result"></td>-->
+<!--              <td>-->
+<!--                <select>-->
+<!--                  <option value="sl">&#45;&#45;chọn&#45;&#45;</option>-->
+<!--                  <option value="10">10%</option>-->
+<!--                  <option value="5">5%</option>-->
+<!--                  <option value="0">0%</option>-->
+<!--                  <option value="Không">Không chịu thuế</option>-->
+<!--                </select>-->
+<!--              </td>-->
+<!--              <td></td>-->
+<!--              <td>-->
+<!--                <button onclick="deleteCurrent()">Xóa</button>-->
+<!--                <button onclick="submitBtn()">ADD </button>-->
+<!--              </td>-->
+<!--            </tr>-->
+            
+        </table>
+      </div>
+    </div>
+
+    <script src="information.js"></script>
+    <script src="commodity.js"></script>
+  </body>
+</html>
